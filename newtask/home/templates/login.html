@@ -14,18 +14,7 @@
 	</head>
 	<body class = "loginBody">
 		<div class = "login">
-			<div class = "container">
-				<div id="mainDiv">
-					<div id="boxDiv">
-						<div id="front"></div>
-						<div id="back"></div>
-						<div id="left"></div>
-						<div id="right"></div>
-						<div id="top"></div>
-						<div id="bottom"></div>
-						<div class="shadow"></div>
-					</div>
-				</div>
+			<div class = "container">				
 				<form  method= 'POST' id="loginform">
 					{% csrf_token %}					
 					<div class="loginBox mw-100 mh-75 p-3 rounded" >
@@ -50,7 +39,6 @@
 						</div>
 						<button class = "loginPageButton">Login</button><br>
 						<p class = "registerP"><a href="{% url 'home:registration' %}">Register </a></p>
-						<p class = "systemP">SystemCheck</p>      
 					</div>
 				</form>				
 			</div>

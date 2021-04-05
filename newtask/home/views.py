@@ -3,6 +3,8 @@ from home.models import User
 
 # Create your views here.
 from django.http import JsonResponse
+from django.http import HttpResponseRedirect
+from django.contrib import messages
 from django.shortcuts import render, redirect, get_object_or_404
 from .decorators import user_task
 from django.views.generic import TemplateView, ListView
